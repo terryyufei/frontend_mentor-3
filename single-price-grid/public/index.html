@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
-<body>
-  Join our community
 
-  30-day, hassle-free money back guarantee
+<body class="bg-lightGray font-body m-6 ">
+  <div class="md:"> <!--wrapper-->
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    <div class="bg-white pl-5 pt-5 pb-5 md:w-1/2">
+      <h1 class="text-cyan text-2xl font-bold tracking-wide pb-4">
+        Join our community
+      </h1>
+      <p class="text-brightYellow text-lg pb-4">
+        30-day, hassle-free money back guarantee
+      </p>
+      <p class="text-grayishBlue text-pretty pr-2">
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
 
-  Monthly Subscription
+    <div class="md:flex md:w-1/2 "> <!--for lg devices-->
 
-  &dollar;29 per month
+    <div class="bg-cyan pl-5 pt-5 pb-5 text-white md:w-1/2">
+      <h1 class="text-xl tracking-wide pb-3">
+         Monthly Subscription
+      </h1>
 
-  Full access for less than &dollar;1 a day
+      <div class="pb-2 flex space-x-3">
+        <p class="text-3xl font-bold">$29</p> <p class="text-lg text-grayishBlue">per month</p>
+      </div>
+      <p class="text-lg pb-4 text-gray-300">
+        Full access for less than &dollar;1 a day
+      </p>
+      <button class="bg-brightYellow pt-4 pb-4 pl-28 pr-28 font-bold rounded-lg shadow-md">
+        Sign Up
+      </button>
+    </div>
 
-  Sign Up
+    <div class="bg-teal-500 p-5 md:w-1/2">
+      <h1 class="text-white text-xl pb-4">
+        Why Us
+      </h1>
+      <ul class="text-gray-300">
+        <li>Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
 
-  Why Us
+    </div> <!--for lg devices-->
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+
+  </div>
+
+
+
 </body>
+
 </html>
